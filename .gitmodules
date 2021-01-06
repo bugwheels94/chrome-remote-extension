@@ -1,0 +1,3 @@
+[submodule "submodules/create-async-thunk-plus"]
+	path = submodules/create-async-thunk-plus
+	url = git@github.com:bugwheels94/create-async-thunk-plus.git
