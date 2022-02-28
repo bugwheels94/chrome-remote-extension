@@ -4,13 +4,13 @@
 	"description": "Build an Extension!",
 	"manifest_version": 2,
 	"background": {
-		"scripts": ["public/background.js"]
+		"scripts": ["background.js"]
 	},
 	"permissions": ["tabs", "history", "search", "bookmarks", "activeTab"],
 	"content_scripts": [
 		{
 			"matches": ["*://*/*"],
-			"js": ["public/contentScript.js"]
+			"js": ["contentScript.js"]
 		}
 	]
 }
