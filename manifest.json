@@ -1,0 +1,16 @@
+{
+	"name": "Chrome Remote Server",
+	"version": "1.0",
+	"description": "Build an Extension!",
+	"manifest_version": 2,
+	"background": {
+		"scripts": ["public/background.js"]
+	},
+	"permissions": ["tabs", "history", "search", "bookmarks", "activeTab"],
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["public/contentScript.js"]
+		}
+	]
+}
